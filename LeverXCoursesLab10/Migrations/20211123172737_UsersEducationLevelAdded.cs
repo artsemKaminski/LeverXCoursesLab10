@@ -2,7 +2,7 @@
 
 namespace LeverXCoursesLab10.Migrations
 {
-    public partial class AddEducationLevelToUsers : Migration
+    public partial class UsersEducationLevelAdded : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

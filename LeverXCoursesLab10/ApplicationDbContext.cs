@@ -9,7 +9,7 @@ namespace LeverXCoursesLab10
 {
     public class ApplicationDbContext : DbContext
     {
-        public DbSet<User> UsersTable {  get; set; }
+        public DbSet<User> Users {  get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

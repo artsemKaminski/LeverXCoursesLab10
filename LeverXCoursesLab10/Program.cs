@@ -12,7 +12,7 @@ namespace LeverXCoursesLab10
             {
                 dbContext.Database.Migrate();
 
-                var users = dbContext.UsersTable.ToList();
+                var users = dbContext.Users.ToList();
                 foreach (var u in users)
                     Console.WriteLine($"{u.Id} {u.Name} {u.Age}");
             }

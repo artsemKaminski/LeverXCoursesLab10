@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace LeverXCoursesLab10.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20211123171925_UsersTableRename")]
-    partial class UsersTableRename
+    [Migration("20211123172737_UsersEducationLevelAdded")]
+    partial class UsersEducationLevelAdded
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -38,7 +38,7 @@ namespace LeverXCoursesLab10.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("UsersTable");
+                    b.ToTable("Users");
                 });
 #pragma warning restore 612, 618
         }

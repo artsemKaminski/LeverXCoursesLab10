@@ -36,7 +36,7 @@ namespace LeverXCoursesLab10.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("UsersTable");
+                    b.ToTable("Users");
                 });
 #pragma warning restore 612, 618
         }
