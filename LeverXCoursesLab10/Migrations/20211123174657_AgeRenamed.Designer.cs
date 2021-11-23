@@ -4,14 +4,16 @@ using LeverXCoursesLab10;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace LeverXCoursesLab10.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20211123174657_AgeRenamed")]
+    partial class AgeRenamed
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -39,15 +41,6 @@ namespace LeverXCoursesLab10.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Users");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = new Guid("a7817fa7-e518-4280-abc4-da14f23638e5"),
-                            Age = 19,
-                            EducationLevel = "School+",
-                            Name = "Egor"
-                        });
                 });
 #pragma warning restore 612, 618
         }
