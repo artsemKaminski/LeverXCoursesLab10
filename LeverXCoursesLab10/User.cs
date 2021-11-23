@@ -14,5 +14,7 @@ namespace LeverXCoursesLab10
         [Required]
         public string EducationLevel { get; set; }
         public int Age { get; set; }
+        public Guid? GroupId { get; set; }
+        public Group Group { get; set; }
     }
 }

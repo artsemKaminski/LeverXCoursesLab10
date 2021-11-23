@@ -10,6 +10,7 @@ namespace LeverXCoursesLab10
     public class ApplicationDbContext : DbContext
     {
         public DbSet<User> Users {  get; set; }
+        public DbSet<Group> Groups { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
