@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Linq;
 
 namespace LeverXCoursesLab10
@@ -9,7 +10,9 @@ namespace LeverXCoursesLab10
         {
             using (var dbContext = new ApplicationDbContext())
             {
-                var users = dbContext.Users.ToList();
+                dbContext.Database.Migrate();
+
+                var users = dbContext.UsersTable.ToList();
                 foreach (var u in users)
                     Console.WriteLine($"{u.Id} {u.Name} {u.Age}");
             }
