@@ -10,6 +10,10 @@ namespace LeverXCoursesLab10
         {
             using (var dbContext = new ApplicationDbContext())
             {
+                //dbContext.Database.EnsureDeleted();
+
+                //dbContext.Database.EnsureCreated();
+
                 dbContext.Database.Migrate();
 
                 var users = dbContext.Users.ToList();
